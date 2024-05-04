@@ -612,6 +612,7 @@ MonoBehaviour:
   slashAnimPrefab: {fileID: 7897710450767312630, guid: efec519fd5b06af49bab06ba658eff77, type: 3}
   slashAnimSpawnPoint: {fileID: 1182744946}
   weaponCollider: {fileID: 953879571}
+  swordAttackCD: 0.5
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,7 +1340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2024694754}
   m_Layer: 0
-  m_Name: Tileset
+  m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
