@@ -292,7 +292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e642f8aee74469f41898718d7bfcddc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentActiveWeapon: {fileID: 0}
 --- !u!1001 &102953960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11586,10 +11585,10 @@ GameObject:
   m_Component:
   - component: {fileID: 865119336}
   - component: {fileID: 865119335}
-  - component: {fileID: 865119337}
   - component: {fileID: 865119334}
   - component: {fileID: 865119338}
   - component: {fileID: 865119339}
+  - component: {fileID: 865119341}
   - component: {fileID: 865119340}
   m_Layer: 0
   m_Name: Player
@@ -11695,21 +11694,6 @@ Transform:
   - {fileID: 2006450604}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &865119337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865119333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e12bb3b6df9582488025c9c29322744, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 4
-  dashSpeed: 4
-  myTrailRenderer: {fileID: 2006450605}
 --- !u!95 &865119338
 Animator:
   serializedVersion: 5
@@ -11778,6 +11762,22 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
+--- !u!114 &865119341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865119333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e12bb3b6df9582488025c9c29322744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
+  dashSpeed: 4
+  myTrailRenderer: {fileID: 2006450605}
+  weaponCollider: {fileID: 953879571}
 --- !u!4 &866437609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4736939028774260637, guid: b8c4cd70cc2820a4cb228b747fe2d767, type: 3}

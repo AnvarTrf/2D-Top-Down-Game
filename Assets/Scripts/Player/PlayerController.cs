@@ -10,6 +10,7 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float dashSpeed = 4f;
     [SerializeField] private TrailRenderer myTrailRenderer;
+    [SerializeField] private Transform weaponCollider;
 
     private PlayerControls playerControls;
     private Vector2 movement;
@@ -18,19 +19,19 @@ public class PlayerController : Singleton<PlayerController>
     private SpriteRenderer mySpriteRender;
     private float startingMoveSpeed;
 
-
     private bool facingLeft = false;
     private bool isDashing = false;
 
     protected override void Awake() {
         base.Awake();
+
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         mySpriteRender = GetComponent<SpriteRenderer>();
     }
 
-     private void Start() {
+    private void Start() {
         playerControls.Combat.Dash.performed += _ => Dash();
 
         startingMoveSpeed = moveSpeed;
@@ -47,6 +48,10 @@ public class PlayerController : Singleton<PlayerController>
     private void FixedUpdate() {
         AdjustPlayerFacingDirection();
         Move();
+    }
+
+    public Transform GetWeaponCollider() {
+        return weaponCollider;
     }
 
     private void PlayerInput() {
