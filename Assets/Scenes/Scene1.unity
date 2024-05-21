@@ -11953,7 +11953,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb771996c218da4997a6c70538d7d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 1
 --- !u!1001 &1052486706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15459,7 +15458,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 39
-      m_TileSpriteIndex: 34
+      m_TileSpriteIndex: 36
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -17176,12 +17175,12 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -407614976, guid: 014459476d7967449b3edfb9c4808d7a, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 149536023, guid: 014459476d7967449b3edfb9c4808d7a, type: 3}
   - m_RefCount: 1

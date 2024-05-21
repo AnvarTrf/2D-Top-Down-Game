@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8956708051750214874}
   - component: {fileID: 2728169123276984463}
   - component: {fileID: 6934709679776046183}
+  - component: {fileID: 4593873897622175050}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -290,3 +291,15 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
+--- !u!114 &4593873897622175050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6889624144588189862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb771996c218da4997a6c70538d7d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
