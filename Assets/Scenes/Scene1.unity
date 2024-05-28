@@ -11006,7 +11006,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7750201, y: 0.43998998, z: -10}
+  m_LocalPosition: {x: 2.771673, y: 0.43998998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11603,6 +11603,9 @@ GameObject:
   - component: {fileID: 865119339}
   - component: {fileID: 865119341}
   - component: {fileID: 865119340}
+  - component: {fileID: 865119344}
+  - component: {fileID: 865119343}
+  - component: {fileID: 865119342}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -11791,6 +11794,48 @@ MonoBehaviour:
   dashSpeed: 4
   myTrailRenderer: {fileID: 2006450605}
   weaponCollider: {fileID: 953879571}
+--- !u!114 &865119342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865119333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d63a7593dca44445a2e4b266b10e73c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
+--- !u!114 &865119343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865119333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57f9fd15bfa75f4fbad29f4c65b344d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 5ca1b8381a5e23843be15f077284eca4, type: 2}
+  restoreDefaultMatTime: 0.2
+--- !u!114 &865119344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865119333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b3dfc35cbe9a74bb2dc5bca685698a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  knockBackThrustAmount: 10
+  damageRecoveryTime: 1
 --- !u!4 &866437609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4736939028774260637, guid: b8c4cd70cc2820a4cb228b747fe2d767, type: 3}
