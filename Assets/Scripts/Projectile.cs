@@ -31,12 +31,14 @@ public class Projectile : MonoBehaviour
         PlayerHealth player = other.gameObject.GetComponent<PlayerHealth>();
 
         if (!other.isTrigger && (enemyHealth || indestructible || player)) {
-            if (player && isEnemyProjectile) {
-                player.TakeDamage(1, transform);
+            if ((player && isEnemyProjectile) || (enemyHealth && !isEnemyProjectile)) {
+                player?.TakeDamage(1, transform);
+                Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+                Destroy(gameObject);
+            } else if (!other.isTrigger && indestructible) {
+                Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+                Destroy(gameObject);
             }
-
-            Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
-            Destroy(gameObject);
         }
     }
 
@@ -46,10 +48,8 @@ public class Projectile : MonoBehaviour
         }
     }
 
-
     private void MoveProjectile()
     {
         transform.Translate(Vector3.right * Time.deltaTime * moveSpeed);
     }
-
 }
