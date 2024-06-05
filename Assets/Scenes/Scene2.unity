@@ -11031,6 +11031,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3567772323937273872, guid: 6be107492d4a4834f9c18126f519f54e, type: 3}
+      propertyPath: fullStaminaImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 2b6d47c4600b63f4589091df0f044530, type: 3}
+    - target: {fileID: 3567772323937273872, guid: 6be107492d4a4834f9c18126f519f54e, type: 3}
+      propertyPath: emptyStaminaImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 69da7ca8fe14d074bbbe64b54e98458f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
