@@ -8,6 +8,7 @@ public class MonsterProjectile : MonoBehaviour
     [SerializeField] private AnimationCurve animCurve;
     [SerializeField] private float heightY = 3f;
     [SerializeField] private GameObject monsterProjectileShadow;
+    [SerializeField] private GameObject splatterPrefab;
 
     private void Start() {
         GameObject monsterShadow = 
@@ -34,7 +35,7 @@ public class MonsterProjectile : MonoBehaviour
 
             yield return null;
         }
-
+        Instantiate(splatterPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

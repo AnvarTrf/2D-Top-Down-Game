@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7239937427122421762
+--- !u!1 &5252691142915702003
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5938546675991257045}
-  - component: {fileID: 6861983675691631166}
-  - component: {fileID: 7597788156481440094}
-  - component: {fileID: 6575702216975146999}
-  - component: {fileID: -3415413094499703853}
+  - component: {fileID: 2855495201039024925}
+  - component: {fileID: 8733137120540810497}
+  - component: {fileID: 4977505194642181710}
+  - component: {fileID: 3006520134917417665}
+  - component: {fileID: 8336372179486110482}
   m_Layer: 0
-  m_Name: Monster Projectile
+  m_Name: Monster Projectile Splatter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5938546675991257045
+--- !u!4 &2855495201039024925
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7239937427122421762}
+  m_GameObject: {fileID: 5252691142915702003}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.63, y: 1.86, z: 0}
+  m_LocalPosition: {x: 6.24, y: -1.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6861983675691631166
+--- !u!212 &8733137120540810497
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7239937427122421762}
+  m_GameObject: {fileID: 5252691142915702003}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,52 +75,25 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a543f78de95191e4ca3ce34ae9c75b85, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 552220a8f38994145a9072a0b2df227f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &7597788156481440094
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!70 &4977505194642181710
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7239937427122421762}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
---- !u!58 &6575702216975146999
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7239937427122421762}
+  m_GameObject: {fileID: 5252691142915702003}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -146,46 +119,31 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.013179123}
-  serializedVersion: 2
-  m_Radius: 0.30890232
---- !u!114 &-3415413094499703853
+  m_Offset: {x: 0.039020658, y: -0.053206738}
+  m_Size: {x: 1.1273912, y: 0.4605194}
+  m_Direction: 1
+--- !u!114 &3006520134917417665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7239937427122421762}
+  m_GameObject: {fileID: 5252691142915702003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c0e8b873d1376d4bbd1d4c4bf15ba85, type: 3}
+  m_Script: {fileID: 11500000, guid: f0e0a008158d15549b0fc8de6ee67fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 2
-  animCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1.1033325
-      value: 0.0065994263
-      inSlope: -1.6022513
-      outSlope: -1.6022513
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.054380003
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  heightY: 5.5
-  monsterProjectileShadow: {fileID: 4745555132666468784, guid: a99e8cee80664fa41b5ea19bb2d28d48, type: 3}
-  splatterPrefab: {fileID: 5252691142915702003, guid: a1a8a359ecda6604b91e022ab7ebd9a8, type: 3}
+  fadeTime: 0.6
+--- !u!114 &8336372179486110482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5252691142915702003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b1b70f8a12a1f49a48505afbeed231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
