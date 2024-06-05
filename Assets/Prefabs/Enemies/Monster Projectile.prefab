@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6861983675691631166}
   - component: {fileID: 7597788156481440094}
   - component: {fileID: 6575702216975146999}
+  - component: {fileID: -3415413094499703853}
   m_Layer: 0
   m_Name: Monster Projectile
   m_TagString: Untagged
@@ -148,3 +149,42 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.013179123}
   serializedVersion: 2
   m_Radius: 0.30890232
+--- !u!114 &-3415413094499703853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239937427122421762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0e8b873d1376d4bbd1d4c4bf15ba85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 2
+  animCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1.1033325
+      value: 0.0065994263
+      inSlope: -1.6022513
+      outSlope: -1.6022513
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.054380003
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  heightY: 5.5
+  monsterProjectileShadow: {fileID: 4745555132666468784, guid: a99e8cee80664fa41b5ea19bb2d28d48, type: 3}
