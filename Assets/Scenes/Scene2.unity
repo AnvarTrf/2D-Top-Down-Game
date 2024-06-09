@@ -9780,6 +9780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2069423509226033224, guid: e60e95112cdd507488393087de7771e8, type: 3}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 1939113726}
     - target: {fileID: 4002365221916988781, guid: e60e95112cdd507488393087de7771e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.75
@@ -9899,6 +9903,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1939113727}
     m_Modifications:
+    - target: {fileID: 99270886800536518, guid: b09d594b0fc403747a7cf75b81362ca1, type: 3}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 1939113726}
     - target: {fileID: 832885539690348660, guid: b09d594b0fc403747a7cf75b81362ca1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.4537354
@@ -15041,6 +15049,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1939113727}
+  - component: {fileID: 1939113728}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: Untagged
@@ -15067,6 +15076,18 @@ Transform:
   - {fileID: 1331816092}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1939113728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939113726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1001b07341307dc4b94ede766009b71e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1945699945
 GameObject:
   m_ObjectHideFlags: 0
@@ -16472,6 +16493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 2069423509226033224, guid: e60e95112cdd507488393087de7771e8, type: 3}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 1939113726}
     - target: {fileID: 4002365221916988781, guid: e60e95112cdd507488393087de7771e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.84
@@ -16702,6 +16727,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1939113727}
     m_Modifications:
+    - target: {fileID: 99270886800536518, guid: b09d594b0fc403747a7cf75b81362ca1, type: 3}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 1939113726}
     - target: {fileID: 832885539690348660, guid: b09d594b0fc403747a7cf75b81362ca1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.56

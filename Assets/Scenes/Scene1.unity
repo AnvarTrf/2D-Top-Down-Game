@@ -489,6 +489,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8282092365195459348, guid: b8c4cd70cc2820a4cb228b747fe2d767, type: 3}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 1939113726}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6440,6 +6444,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8282092365195459348, guid: b8c4cd70cc2820a4cb228b747fe2d767, type: 3}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 1939113726}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10608,6 +10616,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8282092365195459348, guid: b8c4cd70cc2820a4cb228b747fe2d767, type: 3}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 1939113726}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20826,6 +20838,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8282092365195459348, guid: b8c4cd70cc2820a4cb228b747fe2d767, type: 3}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 1939113726}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21142,7 +21158,7 @@ PrefabInstance:
       objectReference: {fileID: 865119336}
     - target: {fileID: 3064970860558285543, guid: aa461ebf19c59434f8191fff4f5cfa42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.78055
+      value: 2.783369
       objectReference: {fileID: 0}
     - target: {fileID: 4965865747696903147, guid: aa461ebf19c59434f8191fff4f5cfa42, type: 3}
       propertyPath: m_Name
@@ -21311,6 +21327,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3567772323937273872, guid: 6be107492d4a4834f9c18126f519f54e, type: 3}
+      propertyPath: fullStaminaImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 2b6d47c4600b63f4589091df0f044530, type: 3}
+    - target: {fileID: 3567772323937273872, guid: 6be107492d4a4834f9c18126f519f54e, type: 3}
+      propertyPath: emptyStaminaImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 69da7ca8fe14d074bbbe64b54e98458f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
