@@ -6,11 +6,9 @@ using UnityEngine.SceneManagement;
 public class WinManager : MonoBehaviour
 {
 
-
-    // //اضافی
     public GameObject enemies;
 
-    //اضافی
+
     public void UpdateSubcategoryCount() {
          int subcategoryCount = CountSubcategories(enemies.transform);
         Debug.Log("Number of enemy subcategories: " + subcategoryCount);

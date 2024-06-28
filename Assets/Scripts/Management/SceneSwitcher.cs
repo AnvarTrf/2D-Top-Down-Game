@@ -6,7 +6,13 @@ using UnityEngine.SceneManagement;
 public class SceneSwitcher : MonoBehaviour
 {
 
-    private GameObject audioManagerObject;
+   // private GameObject audioManagerObject;
+    private AudioManager audioManager;
+
+        private void Start() {
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
+    }
+
     
     private void Awake(){
         DontDestroyOnLoad(gameObject);
@@ -24,6 +30,7 @@ public class SceneSwitcher : MonoBehaviour
                   {
                    Destroy(canvasObject);
                   }
+          audioManager.StopMusic();
         SceneManager.LoadScene("Main Menu");
     }
     
