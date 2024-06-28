@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioSource musicSource;
-
     public AudioClip background;
 
     private void Awake(){
@@ -16,5 +17,9 @@ public class AudioManager : MonoBehaviour
         musicSource.clip=background;
         musicSource.Play();
     }
-    
+
+    public void StopMusic()
+    {
+        musicSource.Stop();
+    }
 }

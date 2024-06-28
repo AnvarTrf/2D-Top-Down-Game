@@ -4,13 +4,33 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+//اضافی
+    private WinManager winManager;
+
     [SerializeField] private int startingHealth = 3;
     [SerializeField] private GameObject deathVFXPrefab;
     [SerializeField] private float knockBackThrust = 15f;
-//اضافی
-    // public GameObject enemies;
     
+    private void Start() {
+        currentHealth = startingHealth;
+//اضافی
+        winManager = GameObject.FindObjectOfType<WinManager>();
+    }
 
+
+//اضافی
+    void OnDestroy()
+    {
+        if (winManager != null)
+            {
+              winManager.UpdateSubcategoryCount();
+            }
+        else
+            {
+         // Handle the case where gameManager is null (optional)
+              Debug.LogWarning("winManager is null in OnDestroy()");
+            }
+    }
 
     private int currentHealth;
     private Knockback knockback;
@@ -21,16 +41,7 @@ public class EnemyHealth : MonoBehaviour
         knockback = GetComponent<Knockback>();
     }
 
-    private void Start() {
-        currentHealth = startingHealth;
 
-    }
-
-//اضافی
-    // private void Update() {
-    //      int subcategoryCount = CountSubcategories(enemies.transform);
-    //     Debug.Log("Number of enemy subcategories: " + subcategoryCount);
-    // }
 
     public void TakeDamage(int damage) {
         currentHealth -= damage;
@@ -52,20 +63,4 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-
-//اضافی
-    // public int CountSubcategories(Transform parent)
-    // {
-    //     int count = 0;
-
-    //     // Iterate through all child transforms
-    //     foreach (Transform child in parent)
-    //     {
-    //         count++;
-    //     }
-
-    //     return count;
-    // }
-
-    
 }
