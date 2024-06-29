@@ -20,6 +20,8 @@ GameObject:
   - component: {fileID: 2069423509226033224}
   - component: {fileID: 3129401592212069869}
   - component: {fileID: 3115962184862997222}
+  - component: {fileID: 7522522171030653087}
+  - component: {fileID: 9076691620179694095}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -35,7 +37,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640990716045823173}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.79, y: -2.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -278,6 +280,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterProjectilePrefab: {fileID: 7239937427122421762, guid: 744f510b2f9622a48a790d1e2b62614c, type: 3}
+--- !u!114 &7522522171030653087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640990716045823173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1001b07341307dc4b94ede766009b71e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies: {fileID: 0}
+--- !u!114 &9076691620179694095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640990716045823173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1001b07341307dc4b94ede766009b71e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies: {fileID: 0}
 --- !u!1 &6887704822324481505
 GameObject:
   m_ObjectHideFlags: 0
