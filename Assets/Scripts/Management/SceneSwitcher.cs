@@ -29,9 +29,9 @@ public class SceneSwitcher : MonoBehaviour
             if (canvasObject != null)
                   {
                    Destroy(canvasObject);
-                  }
-          audioManager.StopMusic();
+                  }     
         SceneManager.LoadScene("Main Menu");
+        audioManager.StopMusic();
     }
     
 
